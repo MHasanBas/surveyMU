@@ -30,7 +30,7 @@ if ($user->isAlreadyAssigned()) {
         if ($row['survey_jenis'] == 'Mahasiswa') {
             header("Location: informasidiri_mahasiswa.php");
         } else if ($row['survey_jenis'] == 'Alumni') {
-            header("Location: informasidiri_alumni.php");f
+            header("Location: informasidiri_alumni.php");
         } else if ($row['survey_jenis'] == 'Ortu') {
             header("Location: informasidiri_ortu.php");
         } else if ($row['survey_jenis'] == 'Dosen') {
@@ -45,6 +45,7 @@ if ($user->isAlreadyAssigned()) {
     }
     exit();
 }
+
 
 $role_login = $_SESSION['role'];
 $user_name = $_SESSION['name'];
